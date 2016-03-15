@@ -23,52 +23,49 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!--下面是中部导航栏的代码-->
 <div class="nav-green nav-head" id="J_m_nav">
 	<div class="nav-content">
-		<div class="nav-btn"><a href="index.html">首页</a></div>
-		<div class="nav-btn"><a href="searchCS.jsp">我要充电</a></div>
-		<div class="nav-btn"><a href="inq_sta.jsp">充电站分布</a></div>
-		<div class="nav-btn"><a href="userInf.html">用户管理</a></div>
-		<div class="nav-btn"><a href="#">关于我们</a></div>
+		<div class="nav-btn active"><a href="index">首页</a></div>
+		<div class="nav-btn "><a href="404">我要充电</a></div>
+		<div class="nav-btn"><a href="404">个人中心</a></div>
+		<div class="nav-btn"><a href="404">关于我们</a></div>
 	</div>
 </div>
 </header>
 <!--顶部导航栏结束 -->
 
-<form action="dealLogin.do" method="post" class="form" onsubmit="checklogin();return false;">
+<form action="loginSubmit" method="post" class="form" onsubmit="checklogin();return false;">
   <div id="page" class="page">
     <div class="login-content">    
       <div  class="log">
-        	<div class="title">登录车快充</div>
+        	<div class="title">登录系统</div>
 	        <div class="input-group user">
 			  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-			  <input class="form-control" name="username" type="text" placeholder="邮箱/用户名/手机">
+			  <input class="form-control" name="userId" type="text" placeholder="用户id">
 			</div>	
-			 <p id="div1"><span>请输入邮箱地址/昵称/手机号码</span></p>
+			 <p id="div1"><span>请输入对应用户id</span></p>
          	<div class="input-group password">
 			  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-			  <input class="form-control" type="password"  name="password" placeholder="密码">
+			  <input class="form-control" type="password"  name="userPassword" placeholder="密码">
 			</div>
 			<p id="div2"><span >请填入长度为6-20个字符的密码</span></p>
 	        <div class="input-group check">
 	          <div class="checkcode">
-	          	<input class="form-control" name="checkcode" type="text" id="checkcode" placeholder="验证码"/>
+	          	<input class="form-control" name="code" type="text" id="checkcode" placeholder="验证码"/>
 	          </div>
 	          <div class="checkimg"> 
-	          		<a><img alt="code..." name="randImage" id="randImage" src="image.jsp"/></a>
+	          		<a><img alt="code..." name="randImage" id="randImage" src="image"/></a>
 	          </div>
-	          <a class="changepic">换张图</a>
 	          <script>
 		          	$("#randImage").click(function(){
-	        			$(this).attr("src","image.jsp");
+	        			$(this).attr("src","image");
 	        		})
 	          		$(".changepic").click(function(){
-	          			$("#randImage").attr("src","image.jsp");
+	          			$("#randImage").attr("src","image");
 	          		})
 	          </script>
 	        </div>
 	        <p id="div3"><span >请填入图片中的字符，不区分大小写</span></p>
 	        <div id="error" class="error">
 	        </div>
-	        <p id="div4"><a href="">忘记密码？</a></p>
 	        <div class="button" id="button">
 	        	<input type="submit"  value="登陆"/>
 	        </div>

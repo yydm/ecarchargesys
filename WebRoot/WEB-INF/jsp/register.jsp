@@ -45,7 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</div>
 	<div class="body">
 	
-	<form  name="form1" method="post" action="dealRegister.do">
+	<form  name="form1" method="post" action="registerSubmit">
 		<table cellpadding="0" cellspacing="0" border="0" width="100%">
             <tbody>
             				<tr>
@@ -134,8 +134,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     <span id="spn_vcode_ok" class="warn"></span>
                                     <span id="spn_vcode_wrong" class="cue" style="display: none;"></span>
                                     <div class="v_box">
-                                        <a href="javascript:show_vcode('imgVcode')" name="change_code_img" tabindex="5">
-                                            <img alt="code..." name="randImage" id="randImage" src="image.jsp" onclick="reload()"></a>看不清?<a href="javascript:reload()" name="change_code_link" tabindex="6">换张图</a>
+                                        <a href="#" name="change_code_img" tabindex="5">
+                                            <img alt="code..." name="randImage" id="randImage" src="image" >
                                     </div>
 
                                 </td>

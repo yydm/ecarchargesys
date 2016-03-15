@@ -9,14 +9,8 @@ response.setCharacterEncoding("UTF-8");
 <html lang="zh-cn">
 <head>
 <meta charset="utf-8">
-<meta name="keywords" content="电动汽车充电 充电导航 充电站  电动汽车服务  去哪充电  充电站分布  北京市充电站查询 充电站位置  充电站地址   北京市充电桩查询  充电桩位置  充电桩地址    ">
-<meta name="description" content="
-为你打造最优质的电动汽车充电服务，享受绿色出行,
-去哪充电？为您提供贴心的智能充电导航服务,
-按区域搜索北京市充电桩布局、充电桩信息,
-根据您的位置自动推送三条最近的充电路线,
-手机APP主动用语音导航带您去最近充电站,
-在建充电桩、可用充电桩、专用充电桩全知道">
+<meta name="keywords" content="">
+<meta name="description" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -63,11 +57,10 @@ body{
 <!--下面是中部导航栏的代码-->
 <div class="nav-green nav-head" id="J_m_nav">
 	<div class="nav-content">
-		<div class="nav-btn active"><a href="index.jsp">首页</a></div>
-		<div class="nav-btn "><a href="searchCS.jsp">我要充电</a></div>
-		<div class="nav-btn"><a href="inq_sta.jsp">充电站分布</a></div>
-		<div class="nav-btn"><a href="userInf.jsp">用户管理</a></div>
-		<div class="nav-btn"><a href="#">关于我们</a></div>
+		<div class="nav-btn active"><a href="index">首页</a></div>
+		<div class="nav-btn "><a href="404">我要充电</a></div>
+		<div class="nav-btn"><a href="404">个人中心</a></div>
+		<div class="nav-btn"><a href="404">关于我们</a></div>
 	</div>
 </div>
 </header>
@@ -81,8 +74,8 @@ body{
 							<img src="pic/functionpic2.png">
 						</div>
 						<div class="function-content">
-							<div class="tittle">方便用户查询电动车充电区域充电站的位置	</div>
-							<div class="content">点击充电站信息查询，随时随地掌握一手充电站分布信息，让你智行天下。
+							<div class="tittle">充电站点查询	</div>
+							<div class="content">点击充电站信息查询，随时随地掌握一手充电站信息，让你智行天下。
 							</div>
 						</div>
 					</div>
@@ -91,8 +84,8 @@ body{
 							<img src="pic/functionpic1.png">
 						</div>
 						<div class="function-content">
-							<div class="tittle">为您自动推送三条最近的充电路线</div>
-							<div class="content">用户也可在WEB浏览器相应网页上输入地点名称，网页也会为用户推送相对于所输地点最合适的3个可用充电站。用户可随意选择任一充电站作为目的地，平台为用户规划起点到所选充电站的最优路径。
+							<div class="tittle">充电情况查询</div>
+							<div class="content">用户也可在WEB浏览器相应网页上输入地点名称，查找周边最近充电站路线。
 							</div>
 						</div>
 					</div>
@@ -101,8 +94,8 @@ body{
 						<img src="pic/functionpic3.png">
 						</div>
 						<div class="function-content">
-							<div class="tittle">手机APP语音导航带您去最近充电站	</div>
-							<div class="content">用户可通过手机终端发出充电请求，平台主动为用户提供在续驶里程范围内的3个满足用户需求的可用充电站，避免或者减少用户在充电站的排队。
+							<div class="tittle">个人中心管理</div>
+							<div class="content">查看对应订单，发现个人管理个人资料信息
 							</div>
 						</div>
 					</div>
