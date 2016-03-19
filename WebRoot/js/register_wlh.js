@@ -35,12 +35,8 @@ var showTimer=5000;
 var show_t="";
 
 
-function reload(){ 
-	 $("#randImage").attr('src', "image");
-}
-function show_vcode(img_id) {
-    $('#' + img_id).attr('src', 'p/tmp_proxy.php?t=' + new Date().getTime());
-}
+
+
 
 function show_error(err_code) {
     switch (err_code) {
@@ -952,7 +948,7 @@ function checkemail(){
 }         
 
 function check(){
-		if (checkname() && checkPhoneNum() && password_check() && checkemail()) {
-			$('#form1').submit();
+		if (checkname() && checkPhoneNum() && password_check()) {
+			$('#registerForm').submit();
 		}
-}
+            }

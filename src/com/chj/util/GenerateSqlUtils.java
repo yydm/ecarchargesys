@@ -104,21 +104,4 @@ public class GenerateSqlUtils {
 
 	}
 	
-	public static void main(String[] args) {
-
-		User user = new User("userPk"//userPk
-						   , "userId"//userId
-						   , "userName"//userName
-						   , "userPassword"//userPassword
-						   , 1//userType
-						   , 1//userStatus
-						   , "userPhone"//userPhone
-						   , "userEmail"//userEmail
-						   , new Date()//createDate
-						   , new Date()//modifyDate
-						   , new Date()//deleteDate
-						   , 1);
-		
-		System.out.println(GenerateSqlUtils.getSqlInset(user));;
-	}
 }

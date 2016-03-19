@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,com.chj.entity.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -45,9 +45,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</div>
 	<div class="body">
 	
-	<form  name="form1" method="post" action="registerSubmit">
+	<form id="form1" name="form1" method="post" action="registerSubmit">
 		<table cellpadding="0" cellspacing="0" border="0" width="100%">
-            <tbody>
+			<tbody>
             				<tr>
                                 <td class="t">
                                     <span class="important">*</span>用户名：
@@ -125,21 +125,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     <span id="div5" style="display: none;" class="cue"></span>
                                 </td>
                             </tr>
-                            <tr >
-                                <td class="t">
-                                    <span class="important">*</span>图形验证码：
-                                </td>
-                                <td>
-                                    <input type="text" name="txt_vcode" class="text" autocomplete="off" maxlength="4" tabindex="4" onblur="checkcode()">
-                                    <span id="spn_vcode_ok" class="warn"></span>
-                                    <span id="spn_vcode_wrong" class="cue" style="display: none;"></span>
-                                    <div class="v_box">
-                                        <a href="#" name="change_code_img" tabindex="5">
-                                            <img alt="code..." name="randImage" id="randImage" src="image" >
-                                    </div>
-
-                                </td>
-                            </tr>
                             <tr>
                                 <td class="t">
                                     &nbsp;
@@ -159,7 +144,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                 </td>
                             </tr>
                         </tbody>
-           </table>
+        </table>
 		</div>
 	</form>
 </div>
@@ -171,7 +156,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <script type="text/javascript">
 	
-            
+            $("#form1").submit(function(e){
+            	if (checkname() && checkPhoneNum() && password_check()) {
+        			$('#registerForm').submit();
+        		}
+            });
             var timeoutrun;
             
             $(function () {

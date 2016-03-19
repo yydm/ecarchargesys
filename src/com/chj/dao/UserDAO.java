@@ -12,11 +12,19 @@ public interface UserDAO {
 	 */
 	public User get(String userId
 			      , String userPassword);
+
 	/**
-	 * 新增用户
+	 * checkUserIdExist
+	 * @param userId
+	 */
+	public boolean checkUserIdExist(String userId);
+
+	/**
+	 * addUser
 	 * @param user
 	 * @return
 	 */
-	public int add(User user);
+	public boolean addUser(User user);
+
 
 }

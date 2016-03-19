@@ -89,12 +89,20 @@ public class User {
 	public void setStatus(int status) {
 		this.status = status;
 	}
-	public User(String userPk, String userId, String userName,
-			String userPassword, int userType, int userStatus,
-			String userPhone, String userEmail, Date createDate,
-			Date modifyDate, Date deleteDate, int status) {
+
+	public User() {
 		super();
-		this.userPk = userPk;
+	}
+
+	public User(String userId
+			  , String userName
+			  , String userPassword
+			  , int    userType
+			  , int    userStatus
+			  , String userPhone
+			  , String userEmail) {
+
+		super();
 		this.userId = userId;
 		this.userName = userName;
 		this.userPassword = userPassword;
@@ -102,11 +110,6 @@ public class User {
 		this.userStatus = userStatus;
 		this.userPhone = userPhone;
 		this.userEmail = userEmail;
-		this.createDate = createDate;
-		this.modifyDate = modifyDate;
-		this.deleteDate = deleteDate;
-		this.status = status;
 	}
-	
-	
+
 }

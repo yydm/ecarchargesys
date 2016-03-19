@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*"  pageEncoding="utf-8"%>
+<%@ page language="java" import="java.util.*,com.chj.entity.*"  pageEncoding="utf-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -36,7 +36,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div id="page" class="page">
     <div class="login-content">    
       <div  class="log">
-        	<div class="title">登录系统</div>
+        	<div class="title">登录成功</div>
 	        <div class="input-group user">
 			  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
 			  <input class="form-control" name="userId" type="text" placeholder="用户id">
@@ -47,23 +47,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			  <input class="form-control" type="password"  name="userPassword" placeholder="密码">
 			</div>
 			<p id="div2"><span >请填入长度为6-20个字符的密码</span></p>
-	        <div class="input-group check">
-	          <div class="checkcode">
-	          	<input class="form-control" name="code" type="text" id="checkcode" placeholder="验证码"/>
-	          </div>
-	          <div class="checkimg"> 
-	          		<a><img alt="code..." name="randImage" id="randImage" src="image"/></a>
-	          </div>
-	          <script>
-		          	$("#randImage").click(function(){
-	        			$(this).attr("src","image");
-	        		})
-	          		$(".changepic").click(function(){
-	          			$("#randImage").attr("src","image");
-	          		})
-	          </script>
-	        </div>
-	        <p id="div3"><span >请填入图片中的字符，不区分大小写</span></p>
 	        <div id="error" class="error">
 	        </div>
 	        <div class="button" id="button">

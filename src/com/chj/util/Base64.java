@@ -1,4 +1,4 @@
-package com.hmh.util;
+package com.chj.util;
 
 import java.io.ByteArrayOutputStream;
 
