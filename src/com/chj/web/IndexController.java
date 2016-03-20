@@ -18,4 +18,18 @@ public class IndexController {
 	public String defalut(){
 		return Constants.INDEX;
 	}
+	@RequestMapping(value="weNeedCharge")
+	public String weNeedCharge(){
+		return "weNeedCharge";
+	}
+
+	@RequestMapping(value="personCenter")
+	public String personCenter(){
+		return "personCenter";
+	}
+	
+	@RequestMapping(value="aboutMe")
+	public String aboutMe(){
+		return "aboutMe";
+	}
 }

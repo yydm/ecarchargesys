@@ -58,9 +58,9 @@ body{
 <div class="nav-green nav-head" id="J_m_nav">
 	<div class="nav-content">
 		<div class="nav-btn active"><a href="index">首页</a></div>
-		<div class="nav-btn "><a href="404">我要充电</a></div>
-		<div class="nav-btn"><a href="404">个人中心</a></div>
-		<div class="nav-btn"><a href="404">关于我们</a></div>
+		<div class="nav-btn "><a href="weNeedCharge">我要充电</a></div>
+		<div class="nav-btn"><a href="personCenter">个人中心</a></div>
+		<div class="nav-btn"><a href="aboutMe">关于我们</a></div>
 	</div>
 </div>
 </header>

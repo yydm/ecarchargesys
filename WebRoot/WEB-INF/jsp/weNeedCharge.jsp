@@ -33,32 +33,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!--顶部导航栏结束 -->
 
 <form action="loginSubmit" method="post" class="form" onsubmit="checklogin();return false;">
-  <div id="page" class="page">
-    <div class="login-content">    
-      <div  class="log">
-        	<div class="title">登录成功</div>
-	        <div class="input-group user">
-			  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-			  <input class="form-control" name="userId" type="text" placeholder="用户id">
-			</div>	
-			 <p id="div1"><span>请输入对应用户id</span></p>
-         	<div class="input-group password">
-			  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-			  <input class="form-control" type="password"  name="userPassword" placeholder="密码">
-			</div>
-			<p id="div2"><span >请填入长度为6-20个字符的密码</span></p>
-	        <div id="error" class="error">
-	        </div>
-	        <div class="button" id="button">
-	        	<input type="submit"  value="登陆"/>
-	        </div>
-	       <div class="regist"> <span>还没有账号？<a href="register.html" class="btn btn-default btn-xs">点击我注册</a></span>		
-	       </div>
-      </div>
-      <div class="ad"><img src="pic/sssd.png" /></div>
-    </div>
-    
-  </div>
+  <div id="page" class="page" style="padding-bottom: 70px">
+    <div ><img width="960" height="449" src="pic/site_under_main2.jpg" alt="网站正在建设中"></div>
   </div>
   
   <%@include file="footer.jsp" %>
